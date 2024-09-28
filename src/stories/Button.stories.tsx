@@ -14,3 +14,25 @@ export const Primary: Story = {
     children: "click me",
   },
 };
+
+export const Dark: Story = {
+  args: {
+    children: "click me",
+  },
+  parameters: {
+    themes: {
+      themeOverride: "dark",
+    },
+  },
+};
+
+export const Mobile: Story = {
+  args: {
+    children: "click me",
+  },
+  parameters: {
+    viewport: {
+      defaultViewport: "mobile1",
+    },
+  },
+};
