@@ -1,9 +1,6 @@
 import type { Preview } from "@storybook/react";
 import { withThemeByClassName } from "@storybook/addon-themes";
 
-import { Theme } from "@radix-ui/themes";
-
-import "@radix-ui/themes/styles.css";
 import "../src/assets/tailwind.css";
 
 const preview: Preview = {
@@ -15,11 +12,6 @@ const preview: Preview = {
       },
       defaultTheme: "light",
     }),
-    (Story) => (
-      <Theme>
-        <Story />
-      </Theme>
-    ),
   ],
   parameters: {
     controls: {
