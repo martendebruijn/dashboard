@@ -6,7 +6,11 @@ export default {
     './stories/**/*.{mdx,tsx}'
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        "dark-slate": "#020617",
+      }
+    },
   },
   plugins: [],
   darkMode: ['class', '.dark'],
