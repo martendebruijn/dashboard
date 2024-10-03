@@ -1,13 +1,7 @@
 import { useClock } from "./useClock";
 import { Widget } from "@components/Widget";
-import clsx from "clsx";
 
-interface Props {
-  city?: string;
-  className?: string;
-}
-
-export default function Clock({ city, className }: Props) {
+export default function Clock() {
   const { time } = useClock();
 
   return (
