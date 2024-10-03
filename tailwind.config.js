@@ -1,4 +1,6 @@
 /** @type {import('tailwindcss').Config} */
+import { colors } from './src/theme/colors'
+
 export default {
   content: [
     "./index.html",
@@ -6,11 +8,9 @@ export default {
     './stories/**/*.{mdx,tsx}'
   ],
   theme: {
-    extend: {
-      colors: {
-        "dark-slate": "#020617",
-      }
-    },
+    colors: {
+      ...colors
+    }
   },
   plugins: [],
   darkMode: ['class', '.dark'],
